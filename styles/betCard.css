@@ -1,0 +1,113 @@
+.BetCard__content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 2.5rem; 
+}
+
+.BetCard__info {
+  margin-top: 4.5rem;
+}
+
+.BetCard__info h4 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.BetCard__info h4 strong {
+  font-weight: 700;
+}
+
+.BetCard__info-description {
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.BetCard__info-button {
+  padding: 0.5rem 1.75rem;
+  border-radius: 6.25rem;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background-color: var(--white);
+}
+
+.lotofacil {
+  color: var(--purple);
+  border: 2px solid var(--purple);
+}
+
+.lotofacil-active {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.megasena {
+  color: var(--green);
+  border: 2px solid var(--green);
+}
+
+.megasena-active {
+  background: var(--green);
+  color: var(--white);
+}
+
+.lotomania {
+  color: var(--yellow);
+  border: 2px solid var(--yellow); 
+}
+
+.lotomania-active {
+  background: var(--yellow);
+  color: var(--white);
+}
+
+.BetCard__info-button.megasena {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+div[data-js="betTypesButtons"] {
+  margin-bottom: 2.25rem;
+}
+
+.BetCard__info-subtitle {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.BetCard__info-numbers {
+  margin-bottom: 2.75rem;
+}
+
+.BetCard__info-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9rem;
+}
+
+.BetCard__info-buttonsGame {
+  border-radius: 0.625rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--green);
+  color: var(--green);
+  background: transparent;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.BetCard__info-buttonsGame.clear {
+  margin-right: 1.5rem;
+}
+
+.BetCard__info-buttonsCart {
+  border-radius: 0.625rem;
+  padding: 1rem 1.5rem;
+  background: var(--green);
+  color: var(--white);
+  font-weight: 500;
+  border: none;
+  font-size: 1rem;  
+}

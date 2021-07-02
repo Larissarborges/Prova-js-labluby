@@ -1,0 +1,82 @@
+:root {
+  --gray-100: #F7F7F7;
+  --gray-200: #F4F4F4;
+  --gray-300: #EBEBEB;
+  --gray-400: #E2E2E2;
+  --gray-700: #868686;
+  --white: #FFFFFF;
+  --purple: #7F3992;
+  --orange: #F79C31;
+  --yellow: #B5C401;
+  --green: #01AC66;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--gray-100);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;  
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-700);
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, p, small {
+  color: var(--gray-700);
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.9rem;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.BetCard {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+}
+
+

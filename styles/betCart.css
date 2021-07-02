@@ -1,0 +1,108 @@
+.BetCard__cart {
+  max-width: 20rem;
+  margin-top: 2.5rem;
+  background: var(--white);
+  border-radius: 0.625rem;
+}
+
+.BetCard__cart-wrapper {
+  padding: 1.875rem 1rem;
+}
+
+.BetCard__cart h4 {
+  margin-bottom: 2.2rem;
+}
+
+.BetCard__cart-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.BetCard__cart-game {
+  display: flex;
+}
+
+.BetCard__cart-buttonWrapper {
+  display: flex;
+  align-items: center;
+  border-right: 4px solid var(--purple);
+  border-radius: 0.625rem 0 0 0.625rem;
+  padding-right: 1rem; 
+}
+
+.BetCard__cart-buttonWrapper button {
+  border: none;
+  background: transparent;
+}
+
+.BetCard__cart-buttonWrapper img {
+  width: 1.25rem;
+  height: 1.5rem;
+}
+
+.BetCard__cart-content {
+  padding: 0.75rem;
+}
+
+.BetCard__cart-content small {
+  font-weight: 700;
+}
+
+.BetCard__cart-content div {
+  display: flex;
+}
+
+.BetCard__cart-info {
+  margin-top: 0.5rem;
+}
+
+.BetCard__cart-info :first-child {
+  font-weight: 700;
+  color: var(--purple);
+  margin-right: 0.875rem;
+}
+
+.BetCard__cart-info :last-child {
+  font-weight: 500;
+}
+
+.BetCard__cart-total {
+  display: flex;
+}
+
+.BetCard__cart-total :first-child {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.BetCard__cart-total :last-child {
+  font-weight: 300;
+}
+
+.BetCard__cart-save {
+  background: var(--gray-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray-400);
+  border-radius: 0 0 10px 10px;
+}
+
+.BetCard__cart-save button {
+  display: flex;
+  align-items: center;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  border: none;
+  color: var(--green);
+  font-size: 2.2rem;
+  font-style: italic;
+  background: transparent;
+}
+
+.BetCard__cart-save button img {
+  width: 1.5rem;
+  height: 1.25rem;
+  margin-left: 1.125rem;
+}

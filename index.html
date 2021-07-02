@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/betCard.css">
+  <link rel="stylesheet" href="./styles/betCart.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <title>Prova JS Ninja</title>
+</head>
+
+<body>
+  <div class="BetCard">
+    <header class="BetCard__header">
+      <div class="BetCard__header-logoArea">
+        <div class="BetCard__header-logo">
+          <a href="/">
+            TGL
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="BetCard__header-nav">
+        <ul class="BetCard__header-accountArea">
+          <li><a href="#">Account</a></li>
+          <li>
+            <a href="#" class="BetCard__header-logout">
+              Logout
+              <img src="assets/arrowRight.svg" alt="Imagem de uma seta" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="BetCard__content">
+      <section class="BetCard__info">
+        <h4><strong>NEW BET</strong> FOR MEGA-SENA</h4>
+        <p class="BetCard__info-description">Choose a game</p>
+        <div data-js="betTypesButtons">
+          <button class="BetCard__info-button lotofacil">Lotofácil</button>
+          <button class="BetCard__info-button megasena">Mega-Sena</button>
+          <button class="BetCard__info-button lotomania">Lotomania</button>
+        </div>
+        <p class="BetCard__info-subtitle">Fill your bet</p>
+        <p>Mark as many numbers as you want up to a maximum of 50. Win by hitting 15,
+          16, 17, 18, 19, 20 or none of the 20 numbers drawn.
+        </p>
+        <div class="BetCard__info-numbers"></div>
+        <div class="BetCard__info-buttons">
+          <div>
+            <button class="BetCard__info-buttonsGame clear">Complete game</button>
+            <button class="BetCard__info-buttonsGame">Clear game</button>
+          </div>
+          <button class="BetCard__info-buttonsCart">Add to cart</button>
+        </div>
+      </section>
+
+      <section class="BetCard__cart">
+        <div class="BetCard__cart-wrapper">
+          <h4>CART</h4>
+          <div class="BetCard__cart-grid">
+            <div class="BetCard__cart-game">
+              <div class="BetCard__cart-buttonWrapper">
+                <button>
+                  <img src="assets/trash.svg" alt="Imagem de lixeira" />
+                </button>
+              </div>
+              <div class="BetCard__cart-content">
+                <small>01, 02,04,05,06,07,09,15,17,20,21, 22,23,24,25</small>
+                <div class="BetCard__cart-info">
+                  <p>Lotofacil</p>
+                  <p>R$ 2,50</p>
+                </div>
+              </div>
+            </div>
+            <div class="BetCard__cart-game">
+              <div class="BetCard__cart-buttonWrapper">
+                <button>
+                  <img src="assets/trash.svg" alt="Imagem de lixeira" />
+                </button>
+              </div>
+              <div class="BetCard__cart-content">
+                <small>01, 02,04,05,06,07,09,15,17,20,21, 22,23,24,25</small>
+                <div class="BetCard__cart-info">
+                  <p>Lotofacil</p>
+                  <p>R$ 2,50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="BetCard__cart-total">
+            <h4>CART</h4>
+            <h4>TOTAL: R$ 7,00</h4>
+          </div>
+        </div>
+        <div class="BetCard__cart-save">
+          <button>
+            Save
+            <img src="assets/arrowRightColor.svg" alt="Imagem de uma seta" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="BetCard__footer">
+      <p>Copyright 2020 Luby Software</p>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

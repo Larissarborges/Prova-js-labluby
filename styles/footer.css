@@ -1,0 +1,11 @@
+.BetCard__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--gray-300);
+}
+
+.BetCard__footer p {
+  padding-top: 1.875rem;
+  margin-bottom: 1rem;
+}

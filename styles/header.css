@@ -1,0 +1,56 @@
+.BetCard__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--gray-300);
+  font-style: italic;
+}
+
+.BetCard__header-logoArea {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.BetCard__header-logoArea nav {
+  font-size: 1.25rem;
+}
+
+.BetCard__header-logoArea {
+  font-size: 2.75rem;
+  padding-top: 0.5rem;
+}
+
+.BetCard__header-logo::before {
+  content: '';
+  width: 5rem;
+  height: 0.4rem;
+  border-radius: 0.375rem;
+  background-color: var(--yellow);
+  position: absolute;
+  top: 58px;
+}
+
+.BetCard__header-nav {
+  width: 50%;
+  font-size: 1.25rem;
+}
+
+.BetCard__header-accountArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.BetCard__header-logout {
+  display: flex;
+  align-items: center;
+}
+
+.BetCard__header-logout img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.625rem;
+}

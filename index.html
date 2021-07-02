@@ -47,18 +47,19 @@
 
     <main class="BetCard__content">
       <section class="BetCard__info">
-        <h4><strong>NEW BET</strong> FOR MEGA-SENA</h4>
+        <h4><strong>NEW BET</strong> FOR <span data-js="game-title">...</span></h4>
         <p class="BetCard__info-description">Choose a game</p>
         <div data-js="betTypesButtons">
-          <button class="BetCard__info-button lotofacil">Lotofácil</button>
-          <button class="BetCard__info-button megasena">Mega-Sena</button>
-          <button class="BetCard__info-button lotomania">Lotomania</button>
+          <button class="BetCard__info-button lotofacil" value="Lotofácil">Lotofácil</button>
+          <button class="BetCard__info-button megasena" value="Mega-Sena">Mega-Sena</button>
+          <button class="BetCard__info-button lotomania" value="Quina">Lotomania</button>
         </div>
         <p class="BetCard__info-subtitle">Fill your bet</p>
-        <p>Mark as many numbers as you want up to a maximum of 50. Win by hitting 15,
+        <p data-js="game-description">Mark as many numbers as you want up to a maximum of 50. Win by hitting 15,
           16, 17, 18, 19, 20 or none of the 20 numbers drawn.
         </p>
-        <div class="BetCard__info-numbers"></div>
+        <div class="BetCard__info-numbers" data-js="game-area">
+        </div>
         <div class="BetCard__info-buttons">
           <div>
             <button class="BetCard__info-buttonsGame clear">Complete game</button>

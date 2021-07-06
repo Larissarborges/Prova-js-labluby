@@ -39,8 +39,8 @@
   border: 2px solid var(--purple);
 }
 
-.lotofacil-active {
-  background: var(--purple);
+.lotofacil.active {
+  background-color: var(--purple);
   color: var(--white);
 }
 
@@ -49,18 +49,18 @@
   border: 2px solid var(--green);
 }
 
-.megasena-active {
-  background: var(--green);
+.megasena.active {
+  background-color: var(--green);
   color: var(--white);
 }
 
 .lotomania {
-  color: var(--yellow);
-  border: 2px solid var(--yellow); 
+  color: #F79C31;
+  border: 2px solid #F79C31; 
 }
 
-.lotomania-active {
-  background: var(--yellow);
+.lotomania.active {
+  background-color: #F79C31;
   color: var(--white);
 }
 
@@ -76,6 +76,10 @@ div[data-js="betTypesButtons"] {
 .BetCard__info-subtitle {
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+.BetCard__info-text {
+  margin-bottom: 2rem;
 }
 
 .BetCard__info-numbers [data-js="game-card"] {
@@ -98,14 +102,9 @@ div[data-js="betTypesButtons"] {
   font-weight: 700;
 }
 
-.game-button-active {
-  border: 1px solid red;
-}
-
 .BetCard__info-buttons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9rem;
 }
 
 .BetCard__info-buttonsGame {
@@ -118,16 +117,54 @@ div[data-js="betTypesButtons"] {
   font-size: 1rem;
 }
 
+.BetCard__info-buttonsGame:hover {
+  background: var(--green);
+  color: var(--white); 
+}
+
 .BetCard__info-buttonsGame.clear {
   margin-right: 1.5rem;
+}
+
+.BetCard__info-buttonsGame.clear:hover {
+  background: var(--green);
+  color: var(--white);
 }
 
 .BetCard__info-buttonsCart {
   border-radius: 0.625rem;
   padding: 1rem 1.5rem;
   background: var(--green);
+}
+
+.BetCard__info-buttonsCart:hover {
+  filter: brightness(0.9);
+}
+
+.BetCard__info-buttonsCart button {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
   color: var(--white);
   font-weight: 500;
-  border: none;
   font-size: 1rem;  
+}
+
+.BetCard__info-buttonsCart button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1.75rem;
+}
+
+.BetCard__info-message {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 9rem;
+}
+
+.BetCard__info-message p {
+  color: red;
+  font-weight: 700;
 }

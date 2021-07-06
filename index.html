@@ -55,56 +55,38 @@
           <button class="BetCard__info-button lotomania" value="Quina">Lotomania</button>
         </div>
         <p class="BetCard__info-subtitle">Fill your bet</p>
-        <p data-js="game-description">Mark as many numbers as you want up to a maximum of 50. Win by hitting 15,
+        <p class="BetCard__info-text" data-js="game-description">
+          Mark as many numbers as you want up to a maximum of 50. Win by hitting 15,
           16, 17, 18, 19, 20 or none of the 20 numbers drawn.
         </p>
         <div class="BetCard__info-numbers" data-js="game-area">
         </div>
         <div class="BetCard__info-buttons">
           <div>
-            <button class="BetCard__info-buttonsGame clear">Complete game</button>
-            <button class="BetCard__info-buttonsGame">Clear game</button>
+            <button data-js="complete-button" class="BetCard__info-buttonsGame clear">Complete game</button>
+            <button data-js="clear-button" class="BetCard__info-buttonsGame">Clear game</button>
           </div>
-          <button class="BetCard__info-buttonsCart">Add to cart</button>
+          <div class="BetCard__info-buttonsCart">
+            <button data-js="button-cart">
+              <img src="assets/shopping-cart.svg" alt="Imagem de um carrinho" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="BetCard__info-message">
+          <p data-js="alert-message"></p>
         </div>
       </section>
 
       <section class="BetCard__cart">
         <div class="BetCard__cart-wrapper">
           <h4>CART</h4>
-          <div class="BetCard__cart-grid">
-            <div class="BetCard__cart-game">
-              <div class="BetCard__cart-buttonWrapper">
-                <button>
-                  <img src="assets/trash.svg" alt="Imagem de lixeira" />
-                </button>
-              </div>
-              <div class="BetCard__cart-content">
-                <small>01, 02,04,05,06,07,09,15,17,20,21, 22,23,24,25</small>
-                <div class="BetCard__cart-info">
-                  <p>Lotofacil</p>
-                  <p>R$ 2,50</p>
-                </div>
-              </div>
-            </div>
-            <div class="BetCard__cart-game">
-              <div class="BetCard__cart-buttonWrapper">
-                <button>
-                  <img src="assets/trash.svg" alt="Imagem de lixeira" />
-                </button>
-              </div>
-              <div class="BetCard__cart-content">
-                <small>01, 02,04,05,06,07,09,15,17,20,21, 22,23,24,25</small>
-                <div class="BetCard__cart-info">
-                  <p>Lotofacil</p>
-                  <p>R$ 2,50</p>
-                </div>
-              </div>
-            </div>
+          <div data-js="cart-grid" class="BetCard__cart-grid">
+            <p data-js="game-message">Não há jogos para mostrar!</p>
           </div>
           <div class="BetCard__cart-total">
             <h4>CART</h4>
-            <h4>TOTAL: R$ 7,00</h4>
+            <h4>TOTAL: <span data-js="game-total">R$ 0,00</span></h4>
           </div>
         </div>
         <div class="BetCard__cart-save">

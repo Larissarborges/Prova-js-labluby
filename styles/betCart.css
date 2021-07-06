@@ -1,12 +1,14 @@
 .BetCard__cart {
   max-width: 20rem;
   margin-top: 2.5rem;
-  background: var(--white);
   border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .BetCard__cart-wrapper {
   padding: 1.875rem 1rem;
+  background: var(--white);
 }
 
 .BetCard__cart h4 {
@@ -15,7 +17,7 @@
 
 .BetCard__cart-grid {
   display: grid;
-  gap: 1.25rem;
+  row-gap: 1.25rem;
   margin-bottom: 2.5rem;
 }
 
@@ -26,7 +28,6 @@
 .BetCard__cart-buttonWrapper {
   display: flex;
   align-items: center;
-  border-right: 4px solid var(--purple);
   border-radius: 0.625rem 0 0 0.625rem;
   padding-right: 1rem; 
 }
@@ -42,24 +43,21 @@
 }
 
 .BetCard__cart-content {
+  width: 100%;
   padding: 0.75rem;
 }
 
-.BetCard__cart-content small {
+.BetCard__cart-numbers {
   font-weight: 700;
 }
 
-.BetCard__cart-content div {
-  display: flex;
-}
-
 .BetCard__cart-info {
+  display: flex;
   margin-top: 0.5rem;
 }
 
 .BetCard__cart-info :first-child {
   font-weight: 700;
-  color: var(--purple);
   margin-right: 0.875rem;
 }
 
@@ -81,6 +79,8 @@
 }
 
 .BetCard__cart-save {
+  /* width: 100%;
+  height: 100%; */
   background: var(--gray-200);
   display: flex;
   justify-content: center;

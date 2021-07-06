@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 70% 30%;
-  gap: 2.5rem; 
+  gap: 2.5rem;
 }
 
 .BetCard__info {
@@ -161,10 +161,10 @@ div[data-js="betTypesButtons"] {
   display: flex;
   justify-content: flex-end;
   margin-top: 1rem;
-  margin-bottom: 9rem;
 }
 
 .BetCard__info-message p {
   color: red;
   font-weight: 700;
+  margin-bottom: 9rem;
 }

@@ -137,9 +137,6 @@
           })
 
           button.classList.toggle('active')
-          // button.classList.contains('selected')
-          //   ? (button.style.background = gameColor, button.style.color = 'white')
-          //   : (button.style.background = 'white', button.style.color = gameColor);
           $gameArea.insertAdjacentHTML('afterbegin', `<div data-js="game-card">${generateCard(range)}</div>`);
 
           var $gameButtons = document.querySelectorAll('[data-js="game-buttons"]');
